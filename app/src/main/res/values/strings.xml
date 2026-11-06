@@ -1,0 +1,161 @@
+<resources>
+    <string name="app_name" translatable="false">Wyrd</string>
+
+    <string name="hero_brand_title_left" translatable="false">WYRD</string>
+
+    <string name="state_ready_primary">NOT ENROLLED</string>
+    <string name="state_ready_secondary">NO SERVER · NO POLICY</string>
+    <string name="state_linking_primary">ENROLLING</string>
+    <string name="state_linking_secondary_fmt">%1$d%% DONE</string>
+    <string name="state_connected_primary">CONNECTED</string>
+    <string name="state_disconnected_primary">NOT CONNECTED</string>
+    <string name="state_linked_secondary_fmt">DEVICE %1$s · VERSION %2$s</string>
+
+    <string name="btn_linking_label">PLEASE WAIT…</string>
+    <string name="btn_linking_sub">DO NOT INTERRUPT</string>
+
+    <string name="status_title">DEVICE STATUS</string>
+    <string name="status_subtitle">WHAT THIS PHONE SHARES</string>
+
+    <string name="work_profile_unsupported">This device does not support work profiles</string>
+    <string name="already_managed">This phone is already managed</string>
+    <string name="enroll_payload_invalid">The connection link is not valid. Ask your administrator for a new one.</string>
+    <string name="checklist_finish_setup">Finish setting up</string>
+    <string name="step_action_set_up">Set up</string>
+
+    <string name="step_pin_title">Set a device PIN</string>
+    <string name="step_pin_subtitle">Required for biometrics and secure storage.</string>
+
+    <string name="work_profile_gone">The work profile has been removed. Wyrd has nothing left to manage on this phone.</string>
+    <string name="location_denied">Position sharing stays off without the location permission</string>
+    <string name="alerts_channel">Alerts</string>
+    <string name="share_switched_off">Position sharing is off</string>
+    <string name="geofence_condition_title">The geofence needs these location settings</string>
+    <string name="geofence_condition_text">Restore them, or the work profile is erased at the next check:\n%1$s</string>
+    <string name="share_unmet_title">Sharing stays off</string>
+    <string name="share_unmet_intro">Turn these on first:</string>
+    <string name="share_lock_refused">Android did not allow location settings to be locked. Sharing stays off.</string>
+    <string name="share_locked_by_geofence">A geofence is in force. Sharing can be turned off once the administrator switches the geofence off.</string>
+    <string name="geofence_title">Geofence</string>
+    <string name="geofence_intro">Your work profile is bound to these zones. Breaking a zone’s rule locks or erases the work profile. Each zone shows which.</string>
+    <string name="geofence_summary">Zones your work profile is bound to, and what breaking them does</string>
+    <string name="geofence_keep_in">Stay inside</string>
+    <string name="geofence_keep_out">Stay outside</string>
+    <string name="geofence_action_lock">locks the work profile</string>
+    <string name="geofence_action_wipe">erases the work profile</string>
+    <string name="geofence_no_fix">Finding your position…</string>
+    <string name="share_fix">Turn on</string>
+    <string name="share_close">Close</string>
+    <string name="req_location_on">Location</string>
+    <string name="req_work_profile_location">Location for work profile</string>
+    <string name="req_network_location">Network location</string>
+    <string name="req_precise_permission">Precise location for Wyrd</string>
+    <string name="req_background_permission">Location all the time for Wyrd</string>
+    <string name="req_unrestricted_background">Unrestricted background running for Wyrd</string>
+    <string name="location_needs_all_the_time">To share your position while the app is closed, choose Allow all the time in Settings</string>
+    <string name="notif_linked">Connected to the server</string>
+    <string name="notif_not_linked">No connection to the server</string>
+    <string name="notif_channel_link">Server connection</string>
+    <string name="notif_channel_installs">App install requests</string>
+    <string name="install_tap_to_confirm">Tap to install %1$s</string>
+
+    <string name="section_data">DATA SENT TO WYRD</string>
+    <string name="section_permissions">PERMISSIONS</string>
+    <string name="section_remote">REMOTE CAPABILITIES</string>
+    <string name="section_restrictions">ENFORCED RESTRICTIONS</string>
+    <string name="section_choice">YOUR CHOICE</string>
+
+    <string name="chip_view">VIEW</string>
+    <string name="chip_granted">GRANTED</string>
+    <string name="chip_denied">DENIED</string>
+    <string name="chip_held">HELD</string>
+    <string name="chip_sources_both">SATELLITE + NETWORK</string>
+    <string name="chip_sources_network">NETWORK</string>
+    <string name="chip_sources_satellite">SATELLITE ONLY</string>
+    <string name="chip_sources_none">NONE</string>
+    <string name="chip_background_unlimited">UNLIMITED</string>
+    <string name="chip_background_limited">LIMITED</string>
+    <plurals name="chip_days">
+        <item quantity="one">%d DAY</item>
+        <item quantity="other">%d DAYS</item>
+    </plurals>
+
+    <string name="data_location">Location</string>
+    <string name="data_location_sub">GPS and network position – while you share it</string>
+    <string name="data_inventory">Device inventory</string>
+    <string name="data_inventory_sub">Model, system version and security patch, storage, battery, serial number, IMEI and the list of apps in the work profile</string>
+    <string name="data_status">Status reports</string>
+    <string name="data_status_sub">Battery, app version and whether location sharing is on, at regular intervals</string>
+    <string name="data_unlocks">Unlock events</string>
+    <string name="data_unlocks_sub">Screen unlocks and failed unlock attempts</string>
+    <string name="data_attestation">Attestation</string>
+    <string name="data_attestation_sub">The phone’s secure hardware confirms the integrity of the system</string>
+    <string name="data_debugging">Debugging</string>
+    <string name="data_debugging_sub">Whether USB or wireless debugging is on, and each change</string>
+    <string name="data_sim">SIM change</string>
+    <string name="data_sim_sub">That the SIM card was replaced. The card number stays on the phone.</string>
+    <string name="data_logs">Security and network logs</string>
+    <string name="data_logs_sub">Only when the administrator turns them on: security events of the phone and connections of work apps</string>
+    <string name="data_removal">Removal notice</string>
+    <string name="data_removal_sub">Before the work profile removes itself: the reason and the time of the last unlock or position</string>
+
+    <string name="perm_precise">Precise location</string>
+    <string name="perm_precise_sub">Locate and report position</string>
+    <string name="perm_background">Background location</string>
+    <string name="perm_background_sub">Locate while the app is closed</string>
+    <string name="perm_phone">Phone identity</string>
+    <string name="perm_phone_sub">Read the serial number, IMEI and SIM card number</string>
+    <string name="perm_notifications">Notifications</string>
+    <string name="perm_notifications_sub">Show the connection status, install requests and geofence warnings</string>
+    <string name="perm_apps">Installed apps</string>
+    <string name="perm_apps_sub">See which apps are in the work profile</string>
+    <string name="perm_sources">Position sources</string>
+    <string name="perm_sources_sub">Satellites work outdoors, the network works anywhere</string>
+    <string name="perm_background_running">Background running</string>
+    <string name="perm_background_running_sub">Stay connected to the management server</string>
+
+    <string name="remote_lock">Lock device</string>
+    <string name="remote_lock_sub">Lock the screen immediately</string>
+    <string name="remote_wipe">Remove work profile</string>
+    <string name="remote_wipe_sub">Erase the work profile. The whole phone only if you turn that on in this app.</string>
+    <string name="remote_apps">App management</string>
+    <string name="remote_apps_sub">Install and update applications</string>
+    <string name="remote_policies">Policies</string>
+    <string name="remote_policies_sub">Apply restrictions and configuration</string>
+    <string name="remote_camera">Camera</string>
+    <string name="remote_camera_sub">Switch the camera off in the work profile</string>
+    <string name="remote_screenshots">Screenshots</string>
+    <string name="remote_screenshots_sub">Block screenshots and screen recording in the work profile</string>
+    <string name="remote_reattest">Re-attestation</string>
+    <string name="remote_reattest_sub">Prove hardware integrity on demand</string>
+    <string name="remote_logs">Log collection</string>
+    <string name="remote_logs_sub">Turn the security and network event logs on and off</string>
+    <string name="autowipe_title">Automatic removal</string>
+    <string name="autowipe_deadline">Unlock this phone before %1$s, or the work profile is removed.</string>
+    <plurals name="autowipe_pending">
+        <item quantity="one">If the phone stays locked for more than %d day, the work profile is removed. The countdown starts at the next unlock.</item>
+        <item quantity="other">If the phone stays locked for more than %d days, the work profile is removed. The countdown starts at the next unlock.</item>
+    </plurals>
+    <string name="expiry_title">Scheduled removal</string>
+    <string name="expiry_deadline">The work profile will be removed on %1$s.</string>
+
+    <string name="restr_not_managed">Not managed</string>
+    <string name="restr_not_managed_sub">Wyrd does not manage this profile</string>
+    <string name="restr_by_policy">Enforced by policy</string>
+    <string name="restr_cross_profile_paste">Cross-profile paste blocked</string>
+    <string name="restr_install_apps">App installs blocked</string>
+    <string name="restr_uninstall_apps">App uninstall blocked</string>
+    <string name="restr_camera">Camera disabled</string>
+    <string name="restr_screenshots">Screenshots disabled</string>
+    <string name="restr_date_time">Automatic date and time</string>
+    <string name="restr_date_time_sub">Kept on while a geofence, automatic or scheduled removal applies</string>
+    <string name="restr_unavailable">Unavailable</string>
+    <string name="restr_unavailable_sub">Could not read the active policy</string>
+    <string name="restr_none">No restrictions</string>
+    <string name="restr_none_sub">No restrictions are in force right now</string>
+
+    <string name="choice_share">Share my position</string>
+    <string name="choice_share_sub">Report where this phone is. While on, location settings stay locked.</string>
+    <string name="choice_wipe_phone">Reset the phone with the profile</string>
+    <string name="choice_wipe_phone_sub">When the work profile is removed, erase the whole phone as well</string>
+</resources>

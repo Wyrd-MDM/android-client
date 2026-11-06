@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wyrd_void">
+
+    <View
+        android:id="@+id/bgGradient"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_radial_steel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/primaryAction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="28dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/wyrd_blue"
+        app:cardElevation="0dp"
+        app:rippleColor="@color/wyrd_blue_dk"
+        app:shapeAppearance="@style/ShapeAppearance.Wyrd.CutCorner.TLBR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="14dp">
+
+            <ImageView
+                android:id="@+id/primaryActionIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_marginEnd="14dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_action_info"
+                app:tint="@color/wyrd_ink" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/primaryActionLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/oswald"
+                    android:letterSpacing="0.08"
+                    android:textColor="@color/wyrd_ink"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/primaryActionSub"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:alpha="0.75"
+                    android:fontFamily="@font/ibm_plex_mono"
+                    android:letterSpacing="0.2"
+                    android:textColor="@color/wyrd_ink"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/ibm_plex_mono"
+                android:textColor="@color/wyrd_ink"
+                android:textSize="18sp"
+                android:text="›" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:id="@+id/upperScroll"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/primaryAction">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/titleRow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:textAppearance="@style/TextAppearance.Wyrd.Title"
+                android:textColor="@color/wyrd_fog"
+                android:letterSpacing="0.14"
+                android:text="@string/hero_brand_title_left" />
+
+            <FrameLayout
+                android:id="@+id/hexFrame"
+                android:layout_width="220dp"
+                android:layout_height="220dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp">
+
+                <link.wyrd.ui.WyrdWebView
+                    android:id="@+id/wyrdWeb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|start"
+                    android:layout_marginStart="-4dp"
+                    android:layout_marginTop="-2dp"
+                    android:fontFamily="@font/ibm_plex_mono"
+                    android:textColor="@color/wyrd_ash"
+                    android:textSize="9sp"
+                    android:text="◤" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginEnd="-4dp"
+                    android:layout_marginTop="-2dp"
+                    android:fontFamily="@font/ibm_plex_mono"
+                    android:textColor="@color/wyrd_ash"
+                    android:textSize="9sp"
+                    android:text="◥" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|start"
+                    android:layout_marginStart="-4dp"
+                    android:layout_marginBottom="-2dp"
+                    android:fontFamily="@font/ibm_plex_mono"
+                    android:textColor="@color/wyrd_ash"
+                    android:textSize="9sp"
+                    android:text="◣" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginEnd="-4dp"
+                    android:layout_marginBottom="-2dp"
+                    android:fontFamily="@font/ibm_plex_mono"
+                    android:textColor="@color/wyrd_ash"
+                    android:textSize="9sp"
+                    android:text="◢" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/statusPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/oswald"
+                android:gravity="center"
+                android:textColor="@color/wyrd_fog"
+                android:textSize="18sp"
+                android:letterSpacing="0.06" />
+
+            <TextView
+                android:id="@+id/statusSecondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/ibm_plex_mono"
+                android:gravity="center"
+                android:textColor="@color/wyrd_ash"
+                android:textSize="11sp"
+                android:letterSpacing="0.12" />
+
+            <ProgressBar
+                android:id="@+id/linkProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="12dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="@color/wyrd_blue"
+                android:progressBackgroundTint="@color/wyrd_card"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/checklistContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/checklistHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/oswald"
+                    android:text="@string/checklist_finish_setup"
+                    android:textColor="@color/wyrd_fog"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/step1Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    app:cardBackgroundColor="@color/wyrd_surface"
+                    app:cardElevation="0dp"
+                    app:strokeColor="@color/wyrd_hairline"
+                    app:strokeWidth="1dp"
+                    app:shapeAppearance="@style/ShapeAppearance.Wyrd.Card">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:id="@+id/step1Title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/oswald"
+                            android:text="@string/step_pin_title"
+                            android:textColor="@color/wyrd_fog"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/step1Subtitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/step_pin_subtitle"
+                            android:textColor="@color/wyrd_ash"
+                            android:textSize="13sp" />
+
+                        <Button
+                            android:id="@+id/step1Button"
+                            style="@style/Widget.Wyrd.Button.Outlined"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/step_action_set_up" />
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

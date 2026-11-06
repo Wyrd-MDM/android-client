@@ -1,0 +1,9 @@
+{
+  "HomepageLocation": "https://intranet.example.com",
+  "IncognitoModeAvailability": 1,
+  "ManagedBookmarks": [
+    { "name": "HR",       "url": "https://hr.example.com" },
+    { "name": "Helpdesk", "url": "https://help.example.com" }
+  ],
+  "URLBlocklist": ["*://*.facebook.com/*", "*://*.twitter.com/*"]
+}

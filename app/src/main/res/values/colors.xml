@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="wyrd_void">#122339</color>
+    <color name="wyrd_surface">#182C45</color>
+    <color name="wyrd_card">#1E3552</color>
+    <color name="wyrd_hairline">#2C4868</color>
+    <color name="wyrd_ink">#0B1727</color>
+
+    <color name="wyrd_blue">#6CBDF2</color>
+    <color name="wyrd_blue_dk">#3A7EBB</color>
+
+    <color name="wyrd_mark_web">#3A7EBB</color>
+
+    <color name="wyrd_green">#86B86A</color>
+
+    <color name="wyrd_alarm">#D64152</color>
+
+    <color name="wyrd_fog">#E3E9EF</color>
+    <color name="wyrd_ash">#B0BECC</color>
+    <color name="wyrd_steel">#8FA1B5</color>
+
+    <color name="wyrd_surface_70">#B3182C45</color>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.Wyrd" parent="Theme.MaterialComponents.NoActionBar">
+        <item name="colorPrimary">@color/wyrd_blue</item>
+        <item name="colorPrimaryVariant">@color/wyrd_blue_dk</item>
+        <item name="colorOnPrimary">@color/wyrd_ink</item>
+
+        <item name="colorSecondary">@color/wyrd_ash</item>
+        <item name="colorSecondaryVariant">@color/wyrd_steel</item>
+        <item name="colorOnSecondary">@color/wyrd_fog</item>
+
+        <item name="android:colorBackground">@color/wyrd_void</item>
+        <item name="colorSurface">@color/wyrd_surface</item>
+        <item name="colorOnBackground">@color/wyrd_fog</item>
+        <item name="colorOnSurface">@color/wyrd_fog</item>
+
+        <item name="colorError">@color/wyrd_alarm</item>
+        <item name="colorOnError">@color/wyrd_void</item>
+
+        <item name="android:statusBarColor">@color/wyrd_void</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/wyrd_void</item>
+        <item name="android:windowLightNavigationBar">false</item>
+
+        <item name="android:textColorPrimary">@color/wyrd_fog</item>
+        <item name="android:textColorSecondary">@color/wyrd_ash</item>
+        <item name="android:fontFamily">@font/manrope</item>
+    </style>
+
+    <style name="ShapeAppearance.Wyrd.CutCorner.TLBR" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSize">14dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="ShapeAppearance.Wyrd.Card" parent="">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerSize">10dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+    </style>
+
+    <style name="TextAppearance.Wyrd.Display" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/oswald</item>
+        <item name="android:fontVariationSettings">"'wght' 700"</item>
+        <item name="android:textColor">@color/wyrd_fog</item>
+    </style>
+
+    <style name="TextAppearance.Wyrd.Title" parent="TextAppearance.Wyrd.Display">
+        <item name="android:textSize">30sp</item>        <item name="android:letterSpacing">0.04</item>
+    </style>
+
+    <style name="Widget.Wyrd.Button.Outlined" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="strokeColor">@color/wyrd_blue</item>
+        <item name="android:textColor">@color/wyrd_blue</item>
+        <item name="rippleColor">@color/wyrd_blue_dk</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.Wyrd.Card</item>
+        <item name="android:fontFamily">@font/ibm_plex_mono</item>
+        <item name="android:letterSpacing">0.15</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

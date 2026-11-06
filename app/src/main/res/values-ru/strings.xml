@@ -1,0 +1,161 @@
+<resources>
+    <string name="state_ready_primary">НЕ ПОДКЛЮЧЕНО</string>
+    <string name="state_ready_secondary">НЕТ СЕРВЕРА · НЕТ ПОЛИТИКИ</string>
+    <string name="state_linking_primary">ПОДКЛЮЧЕНИЕ</string>
+    <string name="state_linking_secondary_fmt">ВЫПОЛНЕНО %1$d %%</string>
+    <string name="state_connected_primary">НА СВЯЗИ</string>
+    <string name="state_disconnected_primary">НЕТ СВЯЗИ</string>
+    <string name="state_linked_secondary_fmt">УСТРОЙСТВО %1$s · ВЕРСИЯ %2$s</string>
+
+    <string name="btn_linking_label">ПОДОЖДИТЕ…</string>
+    <string name="btn_linking_sub">НЕ ПРЕРЫВАЙТЕ</string>
+
+    <string name="status_title">СОСТОЯНИЕ УСТРОЙСТВА</string>
+    <string name="status_subtitle">ЧТО ПЕРЕДАЁТ ТЕЛЕФОН</string>
+
+    <string name="work_profile_unsupported">Телефон не поддерживает рабочий профиль</string>
+    <string name="already_managed">Телефон уже подключён к управлению</string>
+    <string name="enroll_payload_invalid">Ссылка подключения недействительна. Запросите новую у администратора.</string>
+    <string name="checklist_finish_setup">Завершите настройку</string>
+    <string name="step_action_set_up">Настроить</string>
+
+    <string name="step_pin_title">Задайте PIN-код</string>
+    <string name="step_pin_subtitle">Нужен для биометрии и защищённого хранилища.</string>
+
+    <string name="work_profile_gone">Рабочий профиль удалён. Приложению Wyrd больше нечем управлять на этом телефоне.</string>
+    <string name="location_denied">Без разрешения на геолокацию передача местоположения не включится</string>
+    <string name="alerts_channel">Предупреждения</string>
+    <string name="share_switched_off">Передача местоположения выключена</string>
+    <string name="geofence_condition_title">Геозоне нужны эти настройки геолокации</string>
+    <string name="geofence_condition_text">Верните их, иначе при следующей проверке рабочий профиль будет удалён:\n%1$s</string>
+    <string name="share_unmet_title">Передача местоположения не включена</string>
+    <string name="share_unmet_intro">Сначала включите:</string>
+    <string name="share_lock_refused">Android не разрешил запретить изменение настроек геолокации. Передача местоположения не включена.</string>
+    <string name="share_locked_by_geofence">Действует геозона. Выключить передачу можно, когда администратор выключит геозону.</string>
+    <string name="geofence_title">Геозона</string>
+    <string name="geofence_intro">Рабочий профиль привязан к этим зонам. Нарушение правила зоны блокирует или стирает рабочий профиль. Что именно произойдёт, указано у каждой зоны.</string>
+    <string name="geofence_summary">Зоны, к которым привязан рабочий профиль, и последствия их нарушения</string>
+    <string name="geofence_keep_in">Нельзя покидать</string>
+    <string name="geofence_keep_out">Нельзя заходить</string>
+    <string name="geofence_action_lock">блокировка рабочего профиля</string>
+    <string name="geofence_action_wipe">стирание рабочего профиля</string>
+    <string name="geofence_no_fix">Определение местоположения…</string>
+    <string name="share_fix">Включить</string>
+    <string name="share_close">Закрыть</string>
+    <string name="req_location_on">Геолокация</string>
+    <string name="req_work_profile_location">Геолокация в рабочем профиле</string>
+    <string name="req_network_location">Определение местоположения по сети</string>
+    <string name="req_precise_permission">Точное местоположение для Wyrd</string>
+    <string name="req_background_permission">Доступ Wyrd к геолокации в любом режиме</string>
+    <string name="req_unrestricted_background">Работа Wyrd в фоне без ограничений</string>
+    <string name="location_needs_all_the_time">Чтобы местоположение передавалось и при закрытом приложении, выберите в настройках «Разрешить в любом режиме»</string>
+    <string name="notif_linked">Связь с сервером есть</string>
+    <string name="notif_not_linked">Нет связи с сервером</string>
+    <string name="notif_channel_link">Связь с сервером</string>
+    <string name="notif_channel_installs">Запросы на установку приложений</string>
+    <string name="install_tap_to_confirm">Нажмите, чтобы установить %1$s</string>
+
+    <string name="section_data">ЧТО ПОЛУЧАЕТ WYRD</string>
+    <string name="section_permissions">РАЗРЕШЕНИЯ</string>
+    <string name="section_remote">УДАЛЁННЫЕ ДЕЙСТВИЯ</string>
+    <string name="section_restrictions">ДЕЙСТВУЮЩИЕ ОГРАНИЧЕНИЯ</string>
+    <string name="section_choice">ВАШ ВЫБОР</string>
+
+    <string name="chip_view">ОТКРЫТЬ</string>
+    <string name="chip_granted">РАЗРЕШЕНО</string>
+    <string name="chip_denied">ЗАПРЕЩЕНО</string>
+    <string name="chip_held">ВЫДАНО</string>
+    <string name="chip_sources_both">СПУТНИКИ + СЕТЬ</string>
+    <string name="chip_sources_network">СЕТЬ</string>
+    <string name="chip_sources_satellite">ТОЛЬКО СПУТНИКИ</string>
+    <string name="chip_sources_none">НЕТ</string>
+    <string name="chip_background_unlimited">БЕЗ ОГРАНИЧЕНИЙ</string>
+    <string name="chip_background_limited">ОГРАНИЧЕНА</string>
+    <plurals name="chip_days">
+        <item quantity="one">%d ДЕНЬ</item>
+        <item quantity="few">%d ДНЯ</item>
+        <item quantity="many">%d ДНЕЙ</item>
+        <item quantity="other">%d ДНЯ</item>
+    </plurals>
+
+    <string name="data_location">Местоположение</string>
+    <string name="data_location_sub">По спутникам и сети – пока вы его передаёте</string>
+    <string name="data_inventory">Сведения об устройстве</string>
+    <string name="data_inventory_sub">Модель, версия системы и уровень обновлений, память, батарея, серийный номер, IMEI и список приложений рабочего профиля</string>
+    <string name="data_status">Регулярные отчёты</string>
+    <string name="data_status_sub">Заряд батареи, версия приложения и включена ли передача местоположения</string>
+    <string name="data_unlocks">Разблокировки</string>
+    <string name="data_unlocks_sub">Разблокировки экрана и неудачные попытки</string>
+    <string name="data_attestation">Проверка целостности</string>
+    <string name="data_attestation_sub">Защищённое оборудование телефона подтверждает целостность системы</string>
+    <string name="data_debugging">Отладка</string>
+    <string name="data_debugging_sub">Включена ли отладка по USB или по сети, и каждое её переключение</string>
+    <string name="data_sim">Смена SIM-карты</string>
+    <string name="data_sim_sub">Что SIM-карту заменили. Номер карты остаётся на телефоне.</string>
+    <string name="data_logs">Журналы безопасности и сети</string>
+    <string name="data_logs_sub">Только когда их включит администратор: события безопасности телефона и соединения рабочих приложений</string>
+    <string name="data_removal">Сообщение об удалении</string>
+    <string name="data_removal_sub">Перед тем как рабочий профиль удалит себя: причина и время последней разблокировки или засечки</string>
+
+    <string name="perm_precise">Точное местоположение</string>
+    <string name="perm_precise_sub">Определять и передавать местоположение</string>
+    <string name="perm_background">Геолокация в фоне</string>
+    <string name="perm_background_sub">Определять местоположение, когда приложение закрыто</string>
+    <string name="perm_phone">Идентификаторы телефона</string>
+    <string name="perm_phone_sub">Получать серийный номер, IMEI и номер SIM-карты</string>
+    <string name="perm_notifications">Уведомления</string>
+    <string name="perm_notifications_sub">Показывать состояние связи, запросы установки и предупреждения геозоны</string>
+    <string name="perm_apps">Установленные приложения</string>
+    <string name="perm_apps_sub">Видеть, какие приложения есть в рабочем профиле</string>
+    <string name="perm_sources">Источники местоположения</string>
+    <string name="perm_sources_sub">Спутники работают под открытым небом, сеть – везде</string>
+    <string name="perm_background_running">Работа в фоне</string>
+    <string name="perm_background_running_sub">Поддерживать связь с сервером управления</string>
+
+    <string name="remote_lock">Блокировка телефона</string>
+    <string name="remote_lock_sub">Немедленно блокировать экран</string>
+    <string name="remote_wipe">Удаление рабочего профиля</string>
+    <string name="remote_wipe_sub">Стирать рабочий профиль. Весь телефон – только если вы включили это в приложении.</string>
+    <string name="remote_apps">Управление приложениями</string>
+    <string name="remote_apps_sub">Устанавливать и обновлять приложения</string>
+    <string name="remote_policies">Политики</string>
+    <string name="remote_policies_sub">Применять ограничения и настройки</string>
+    <string name="remote_camera">Камера</string>
+    <string name="remote_camera_sub">Отключать камеру в рабочем профиле</string>
+    <string name="remote_screenshots">Снимки экрана</string>
+    <string name="remote_screenshots_sub">Запрещать снимки и запись экрана в рабочем профиле</string>
+    <string name="remote_reattest">Повторная проверка целостности</string>
+    <string name="remote_reattest_sub">Подтверждать целостность по запросу сервера</string>
+    <string name="remote_logs">Журналы событий</string>
+    <string name="remote_logs_sub">Включать и выключать журналы безопасности и сетевых событий</string>
+    <string name="autowipe_title">Автоматическое удаление</string>
+    <string name="autowipe_deadline">Разблокируйте телефон до %1$s, иначе рабочий профиль будет удалён.</string>
+    <plurals name="autowipe_pending">
+        <item quantity="one">Если телефон останется заблокированным дольше %d дня, рабочий профиль будет удалён. Отсчёт начнётся со следующей разблокировки.</item>
+        <item quantity="few">Если телефон останется заблокированным дольше %d дней, рабочий профиль будет удалён. Отсчёт начнётся со следующей разблокировки.</item>
+        <item quantity="many">Если телефон останется заблокированным дольше %d дней, рабочий профиль будет удалён. Отсчёт начнётся со следующей разблокировки.</item>
+        <item quantity="other">Если телефон останется заблокированным дольше %d дня, рабочий профиль будет удалён. Отсчёт начнётся со следующей разблокировки.</item>
+    </plurals>
+    <string name="expiry_title">Плановое удаление</string>
+    <string name="expiry_deadline">Рабочий профиль будет удалён %1$s.</string>
+
+    <string name="restr_not_managed">Не под управлением</string>
+    <string name="restr_not_managed_sub">Wyrd не управляет этим профилем</string>
+    <string name="restr_by_policy">Задано политикой</string>
+    <string name="restr_cross_profile_paste">Вставка между профилями запрещена</string>
+    <string name="restr_install_apps">Установка приложений запрещена</string>
+    <string name="restr_uninstall_apps">Удаление приложений запрещено</string>
+    <string name="restr_camera">Камера отключена</string>
+    <string name="restr_screenshots">Снимки экрана запрещены</string>
+    <string name="restr_date_time">Автоматические дата и время</string>
+    <string name="restr_date_time_sub">Не отключаются, пока действует геозона, автоматическое или плановое удаление</string>
+    <string name="restr_unavailable">Нет данных</string>
+    <string name="restr_unavailable_sub">Не удалось прочитать действующую политику</string>
+    <string name="restr_none">Ограничений нет</string>
+    <string name="restr_none_sub">Сейчас ограничения не действуют</string>
+
+    <string name="choice_share">Передавать местоположение</string>
+    <string name="choice_share_sub">Телефон сообщает, где находится. Пока передача включена, настройки геолокации изменить нельзя.</string>
+    <string name="choice_wipe_phone">Сбрасывать телефон вместе с профилем</string>
+    <string name="choice_wipe_phone_sub">При удалении рабочего профиля стирать весь телефон</string>
+</resources>

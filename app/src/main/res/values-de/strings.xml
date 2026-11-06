@@ -1,0 +1,157 @@
+<resources>
+    <string name="state_ready_primary">NICHT REGISTRIERT</string>
+    <string name="state_ready_secondary">KEIN SERVER · KEINE RICHTLINIE</string>
+    <string name="state_linking_primary">REGISTRIERUNG</string>
+    <string name="state_linking_secondary_fmt">%1$d %% ABGESCHLOSSEN</string>
+    <string name="state_connected_primary">VERBUNDEN</string>
+    <string name="state_disconnected_primary">KEINE VERBINDUNG</string>
+    <string name="state_linked_secondary_fmt">GERÄT %1$s · VERSION %2$s</string>
+
+    <string name="btn_linking_label">BITTE WARTEN…</string>
+    <string name="btn_linking_sub">NICHT UNTERBRECHEN</string>
+
+    <string name="status_title">GERÄTESTATUS</string>
+    <string name="status_subtitle">WAS DAS TELEFON ÜBERMITTELT</string>
+
+    <string name="work_profile_unsupported">Dieses Gerät unterstützt kein Arbeitsprofil</string>
+    <string name="already_managed">Dieses Telefon wird bereits verwaltet</string>
+    <string name="enroll_payload_invalid">Der Verbindungslink ist ungültig. Fordern Sie beim Administrator einen neuen an.</string>
+    <string name="checklist_finish_setup">Einrichtung abschließen</string>
+    <string name="step_action_set_up">Einrichten</string>
+
+    <string name="step_pin_title">Geräte-PIN festlegen</string>
+    <string name="step_pin_subtitle">Erforderlich für Biometrie und den sicheren Speicher.</string>
+
+    <string name="work_profile_gone">Das Arbeitsprofil wurde entfernt. Auf diesem Telefon gibt es für Wyrd nichts mehr zu verwalten.</string>
+    <string name="location_denied">Ohne Standortberechtigung bleibt die Standortfreigabe deaktiviert</string>
+    <string name="alerts_channel">Warnungen</string>
+    <string name="share_switched_off">Standortfreigabe deaktiviert</string>
+    <string name="geofence_condition_title">Der Geofence braucht diese Standorteinstellungen</string>
+    <string name="geofence_condition_text">Stellen Sie sie wieder her, sonst wird das Arbeitsprofil bei der nächsten Prüfung gelöscht:\n%1$s</string>
+    <string name="share_unmet_title">Standortfreigabe bleibt deaktiviert</string>
+    <string name="share_unmet_intro">Aktivieren Sie zuerst:</string>
+    <string name="share_lock_refused">Android hat das Sperren der Standorteinstellungen nicht zugelassen. Die Standortfreigabe bleibt deaktiviert.</string>
+    <string name="share_locked_by_geofence">Ein Geofence ist aktiv. Die Freigabe lässt sich ausschalten, sobald der Administrator den Geofence abschaltet.</string>
+    <string name="geofence_title">Geofence</string>
+    <string name="geofence_intro">Ihr Arbeitsprofil ist an diese Zonen gebunden. Ein Verstoß gegen die Regel einer Zone sperrt oder löscht das Arbeitsprofil. Was genau geschieht, steht bei jeder Zone.</string>
+    <string name="geofence_summary">Zonen, an die Ihr Arbeitsprofil gebunden ist, und die Folgen eines Verstoßes</string>
+    <string name="geofence_keep_in">Nicht verlassen</string>
+    <string name="geofence_keep_out">Nicht betreten</string>
+    <string name="geofence_action_lock">Sperrung des Arbeitsprofils</string>
+    <string name="geofence_action_wipe">Löschung des Arbeitsprofils</string>
+    <string name="geofence_no_fix">Standort wird ermittelt…</string>
+    <string name="share_fix">Aktivieren</string>
+    <string name="share_close">Schließen</string>
+    <string name="req_location_on">Standort</string>
+    <string name="req_work_profile_location">Standort für Arbeitsprofil</string>
+    <string name="req_network_location">Standortermittlung über das Netzwerk</string>
+    <string name="req_precise_permission">Genauer Standort für Wyrd</string>
+    <string name="req_background_permission">Standortzugriff „Immer zulassen“ für Wyrd</string>
+    <string name="req_unrestricted_background">Uneingeschränkte Hintergrundnutzung für Wyrd</string>
+    <string name="location_needs_all_the_time">Damit der Standort auch bei geschlossener App übermittelt wird, wählen Sie in den Einstellungen „Immer zulassen“</string>
+    <string name="notif_linked">Mit dem Server verbunden</string>
+    <string name="notif_not_linked">Keine Verbindung zum Server</string>
+    <string name="notif_channel_link">Serververbindung</string>
+    <string name="notif_channel_installs">Anfragen zur App-Installation</string>
+    <string name="install_tap_to_confirm">Tippen Sie, um %1$s zu installieren</string>
+
+    <string name="section_data">WAS WYRD ERHÄLT</string>
+    <string name="section_permissions">BERECHTIGUNGEN</string>
+    <string name="section_remote">AKTIONEN AUS DER FERNE</string>
+    <string name="section_restrictions">AKTIVE EINSCHRÄNKUNGEN</string>
+    <string name="section_choice">IHRE WAHL</string>
+
+    <string name="chip_view">ANZEIGEN</string>
+    <string name="chip_granted">ERTEILT</string>
+    <string name="chip_denied">VERWEIGERT</string>
+    <string name="chip_held">VORHANDEN</string>
+    <string name="chip_sources_both">SATELLIT + NETZWERK</string>
+    <string name="chip_sources_network">NETZWERK</string>
+    <string name="chip_sources_satellite">NUR SATELLIT</string>
+    <string name="chip_sources_none">KEINE</string>
+    <string name="chip_background_unlimited">UNEINGESCHRÄNKT</string>
+    <string name="chip_background_limited">EINGESCHRÄNKT</string>
+    <plurals name="chip_days">
+        <item quantity="one">%d TAG</item>
+        <item quantity="other">%d TAGE</item>
+    </plurals>
+
+    <string name="data_location">Standort</string>
+    <string name="data_location_sub">Per Satellit und Netzwerk – solange Sie ihn freigeben</string>
+    <string name="data_inventory">Geräteinformationen</string>
+    <string name="data_inventory_sub">Modell, Systemversion und Sicherheitspatch, Speicher, Akku, Seriennummer, IMEI und die Liste der Apps im Arbeitsprofil</string>
+    <string name="data_status">Statusberichte</string>
+    <string name="data_status_sub">Akkustand, App-Version und ob die Standortfreigabe an ist, in regelmäßigen Abständen</string>
+    <string name="data_unlocks">Entsperrungen</string>
+    <string name="data_unlocks_sub">Entsperrungen und fehlgeschlagene Entsperrversuche</string>
+    <string name="data_attestation">Integritätsnachweis</string>
+    <string name="data_attestation_sub">Die Sicherheitshardware des Telefons bestätigt die Integrität des Systems</string>
+    <string name="data_debugging">Debugging</string>
+    <string name="data_debugging_sub">Ob USB- oder WLAN-Debugging an ist, und jede Änderung</string>
+    <string name="data_sim">SIM-Wechsel</string>
+    <string name="data_sim_sub">Dass die SIM-Karte getauscht wurde. Die Kartennummer bleibt auf dem Telefon.</string>
+    <string name="data_logs">Sicherheits- und Netzwerkprotokolle</string>
+    <string name="data_logs_sub">Nur wenn der Administrator sie einschaltet: Sicherheitsereignisse des Telefons und Verbindungen der Arbeits-Apps</string>
+    <string name="data_removal">Löschmeldung</string>
+    <string name="data_removal_sub">Bevor sich das Arbeitsprofil selbst entfernt: der Grund und die Zeit der letzten Entsperrung oder Position</string>
+
+    <string name="perm_precise">Genauer Standort</string>
+    <string name="perm_precise_sub">Standort ermitteln und übermitteln</string>
+    <string name="perm_background">Standort im Hintergrund</string>
+    <string name="perm_background_sub">Standort ermitteln, wenn die App geschlossen ist</string>
+    <string name="perm_phone">Gerätekennungen</string>
+    <string name="perm_phone_sub">Seriennummer, IMEI und SIM-Kartennummer auslesen</string>
+    <string name="perm_notifications">Benachrichtigungen</string>
+    <string name="perm_notifications_sub">Verbindungsstatus, Installationsanfragen und Geofence-Warnungen anzeigen</string>
+    <string name="perm_apps">Installierte Apps</string>
+    <string name="perm_apps_sub">Sehen, welche Apps im Arbeitsprofil sind</string>
+    <string name="perm_sources">Standortquellen</string>
+    <string name="perm_sources_sub">Satelliten funktionieren im Freien, das Netzwerk überall</string>
+    <string name="perm_background_running">Hintergrundaktivität</string>
+    <string name="perm_background_running_sub">Mit dem Verwaltungsserver verbunden bleiben</string>
+
+    <string name="remote_lock">Gerätesperre</string>
+    <string name="remote_lock_sub">Den Bildschirm sofort sperren</string>
+    <string name="remote_wipe">Entfernen des Arbeitsprofils</string>
+    <string name="remote_wipe_sub">Das Arbeitsprofil löschen. Das ganze Telefon nur, wenn Sie das in dieser App eingeschaltet haben.</string>
+    <string name="remote_apps">App-Verwaltung</string>
+    <string name="remote_apps_sub">Apps installieren und aktualisieren</string>
+    <string name="remote_policies">Richtlinien</string>
+    <string name="remote_policies_sub">Einschränkungen und Einstellungen anwenden</string>
+    <string name="remote_camera">Kamera</string>
+    <string name="remote_camera_sub">Die Kamera im Arbeitsprofil deaktivieren</string>
+    <string name="remote_screenshots">Screenshots</string>
+    <string name="remote_screenshots_sub">Screenshots und Bildschirmaufnahmen im Arbeitsprofil verhindern</string>
+    <string name="remote_reattest">Erneuter Integritätsnachweis</string>
+    <string name="remote_reattest_sub">Die Integrität auf Anfrage des Servers nachweisen</string>
+    <string name="remote_logs">Protokollierung</string>
+    <string name="remote_logs_sub">Sicherheits- und Netzwerkprotokolle ein- und ausschalten</string>
+    <string name="autowipe_title">Automatische Entfernung</string>
+    <string name="autowipe_deadline">Entsperren Sie das Telefon bis %1$s, sonst wird das Arbeitsprofil entfernt.</string>
+    <plurals name="autowipe_pending">
+        <item quantity="one">Bleibt das Telefon länger als %d Tag gesperrt, wird das Arbeitsprofil entfernt. Die Frist beginnt mit der nächsten Entsperrung.</item>
+        <item quantity="other">Bleibt das Telefon länger als %d Tage gesperrt, wird das Arbeitsprofil entfernt. Die Frist beginnt mit der nächsten Entsperrung.</item>
+    </plurals>
+    <string name="expiry_title">Geplante Entfernung</string>
+    <string name="expiry_deadline">Das Arbeitsprofil wird am %1$s entfernt.</string>
+
+    <string name="restr_not_managed">Nicht verwaltet</string>
+    <string name="restr_not_managed_sub">Wyrd verwaltet dieses Profil nicht</string>
+    <string name="restr_by_policy">Durch Richtlinie vorgegeben</string>
+    <string name="restr_cross_profile_paste">Einfügen zwischen Profilen gesperrt</string>
+    <string name="restr_install_apps">App-Installation gesperrt</string>
+    <string name="restr_uninstall_apps">App-Deinstallation gesperrt</string>
+    <string name="restr_camera">Kamera deaktiviert</string>
+    <string name="restr_screenshots">Screenshots deaktiviert</string>
+    <string name="restr_date_time">Datum und Uhrzeit automatisch</string>
+    <string name="restr_date_time_sub">Bleibt an, solange ein Geofence, die automatische oder die geplante Entfernung gilt</string>
+    <string name="restr_unavailable">Nicht verfügbar</string>
+    <string name="restr_unavailable_sub">Die aktive Richtlinie ließ sich nicht lesen</string>
+    <string name="restr_none">Keine Einschränkungen</string>
+    <string name="restr_none_sub">Derzeit gelten keine Einschränkungen</string>
+
+    <string name="choice_share">Standort freigeben</string>
+    <string name="choice_share_sub">Das Telefon meldet seinen Standort. Solange die Freigabe aktiv ist, lassen sich die Standorteinstellungen nicht ändern.</string>
+    <string name="choice_wipe_phone">Telefon mit dem Profil zurücksetzen</string>
+    <string name="choice_wipe_phone_sub">Beim Entfernen des Arbeitsprofils das gesamte Telefon löschen</string>
+</resources>
